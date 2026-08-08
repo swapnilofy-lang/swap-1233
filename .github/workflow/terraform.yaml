@@ -1,0 +1,26 @@
+name : terraform CI
+on :
+push :
+branches :
+- feature
+jobs :
+terraform :
+run-on : ubunto-latest
+steps :
+- name : terraform code
+uses : action/checkout@v4
+
+-name : setup terraform
+uses : hashicorp/setup-terraform@v3
+
+-name : terraform version
+run : terraform version
+
+-name : terraform initialization
+run : terraform init
+
+-name :teraform formating
+run : terraform fmt
+
+-name : terraform validation
+run :terraform validate
