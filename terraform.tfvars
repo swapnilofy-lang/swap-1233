@@ -4,7 +4,7 @@ RG = {
     location = "centralindia"
   }
 rg1 = {
-    name     = "rg_prod"
+    name     = "rg_prod1"
     location = "centralindia"
   }
 }
