@@ -7,4 +7,8 @@ rg1 = {
     name     = "rg_prod1"
     location = "centralindia"
   }
+  rg2 = {
+    name     = "rg_prod12"
+    location = "centralindia"
+  }
 }
